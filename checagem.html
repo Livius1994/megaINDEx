@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmação de Inscrição</title>
+
+    <!-- UTMify -->
+    <script
+        src="../cdn.utmify.com.br/scripts/utms/latest.js"
+        data-utmify-prevent-xcod-sck
+        data-utmify-prevent-subids
+        async
+        defer
+    ></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            background: linear-gradient(135deg, #0b3e84, #18a1ff);
+        }
+
+        .box {
+            width: 100%;
+            max-width: 420px;
+            background: #ffffff;
+            border-radius: 14px;
+            padding: 26px 22px 22px;
+            box-shadow: 0 14px 35px rgba(0, 0, 0, 0.18);
+            text-align: center;
+            position: relative;
+        }
+
+        .badge {
+            position: absolute;
+            top: -16px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #0b3e84;
+            color: #fff;
+            padding: 6px 14px;
+            border-radius: 999px;
+            font-size: 11px;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+        }
+
+        .title {
+            font-size: 21px;
+            font-weight: 700;
+            color: #0b3e84;
+            margin-top: 10px;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            font-size: 13px;
+            color: #4a4a4a;
+            margin-bottom: 20px;
+        }
+
+        .status-box {
+            background: #f4f7ff;
+            border-radius: 10px;
+            padding: 12px 10px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .status-icon {
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            background: #0b3e84;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 16px;
+            flex-shrink: 0;
+        }
+
+        .status-text {
+            text-align: left;
+            font-size: 13px;
+            color: #374151;
+            line-height: 1.45;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            border: none;
+            border-radius: 999px;
+            background: #0b3e84;
+            color: #fff;
+            padding: 13px;
+            font-size: 15px;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            transition: transform 0.12s ease, box-shadow 0.12s ease, opacity 0.12s ease;
+            box-shadow: 0 8px 18px rgba(11, 62, 132, 0.45);
+        }
+
+        .btn:hover {
+            opacity: 0.96;
+            transform: translateY(-1px);
+            box-shadow: 0 10px 22px rgba(11, 62, 132, 0.55);
+        }
+
+        .footer {
+            margin-top: 12px;
+            font-size: 10px;
+            color: #dbe5ff;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <div class="badge">Verificação segura</div>
+
+        <h1 class="title">Confirme sua inscrição</h1>
+        <p class="subtitle">Estamos quase terminando o seu cadastro.</p>
+
+        <div class="status-box">
+            <div class="status-icon">✓</div>
+            <p class="status-text">
+                Para liberar o acompanhamento completo, clique no botão abaixo e finalize
+                a confirmação dos seus dados no sistema.
+            </p>
+        </div>
+
+        <a href="nivel/index.html" class="btn">Continuar inscrição</a>
+    </div>
+
+
+</body>
+</html>
