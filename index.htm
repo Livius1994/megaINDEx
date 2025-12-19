@@ -1,0 +1,738 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mega da Virada 2025 – Índice Completo</title>
+  <meta name="description" content="Índice completo e bem estruturado sobre a Mega da Virada 2025: como funciona, como apostar, bolões, probabilidades, impostos e o que fazer se ganhar." />
+  <style>
+    :root{
+      --bg1:#070A12;
+      --bg2:#0B1020;
+      --card:#0E1630cc;
+      --card2:#0B132Acc;
+      --text:#EAF0FF;
+      --muted:#AAB7E3;
+      --line:#1E2B55;
+      --accent:#5D5BFF;
+      --accent2:#28E0AE;
+      --accent3:#FFD166;
+      --danger:#FF4D6D;
+      --shadow: 0 18px 60px rgba(0,0,0,.45);
+      --radius: 18px;
+      --radius2: 24px;
+    }
+
+    *{ box-sizing:border-box; }
+    html,body{ height:100%; }
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      color:var(--text);
+      background:
+        radial-gradient(900px 500px at 18% 10%, rgba(93,91,255,.22), transparent 60%),
+        radial-gradient(900px 500px at 85% 35%, rgba(40,224,174,.18), transparent 60%),
+        radial-gradient(700px 500px at 50% 85%, rgba(255,209,102,.10), transparent 55%),
+        linear-gradient(180deg, var(--bg1), var(--bg2));
+      overflow-x:hidden;
+    }
+
+    .wrap{
+      width:min(1100px, 92vw);
+      margin: 0 auto;
+      padding: 28px 0 70px;
+    }
+
+    /* top bar */
+    .topbar{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:14px;
+      padding:14px 16px;
+      border:1px solid rgba(255,255,255,.08);
+      border-radius: 999px;
+      background: rgba(10,14,30,.35);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 12px 40px rgba(0,0,0,.25);
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      min-width: 220px;
+    }
+
+    .badge{
+      width:40px;height:40px;
+      border-radius: 12px;
+      display:grid;
+      place-items:center;
+      background:
+        linear-gradient(135deg, rgba(93,91,255,.95), rgba(40,224,174,.85));
+      box-shadow: 0 10px 25px rgba(93,91,255,.22);
+      position:relative;
+      overflow:hidden;
+    }
+    .badge::after{
+      content:"";
+      position:absolute;
+      inset:-40%;
+      background: radial-gradient(circle at 30% 30%, rgba(255,255,255,.45), transparent 55%);
+      transform: rotate(25deg);
+    }
+    .badge svg{ position:relative; z-index:2; }
+
+    .brand h1{
+      margin:0;
+      font-size:14px;
+      letter-spacing:.3px;
+      line-height:1.1;
+    }
+    .brand small{
+      display:block;
+      color:var(--muted);
+      font-size:12px;
+      margin-top:2px;
+      letter-spacing:.2px;
+    }
+
+    .tools{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      flex-wrap:wrap;
+      justify-content:flex-end;
+    }
+
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:10px 12px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(14,22,48,.35);
+      color: var(--muted);
+      font-size:12px;
+      user-select:none;
+      white-space:nowrap;
+    }
+    .dot{
+      width:9px;height:9px;border-radius:999px;
+      background: var(--accent2);
+      box-shadow: 0 0 0 4px rgba(40,224,174,.15);
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding:10px 14px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.12);
+      background: linear-gradient(135deg, rgba(93,91,255,.28), rgba(40,224,174,.18));
+      color: var(--text);
+      cursor:pointer;
+      font-weight:600;
+      font-size:12px;
+      transition:.18s ease;
+    }
+    .btn:hover{
+      transform: translateY(-1px);
+      box-shadow: 0 16px 50px rgba(0,0,0,.35);
+      border-color: rgba(255,255,255,.22);
+    }
+
+    /* hero */
+    .hero{
+      margin-top: 26px;
+      display:grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap:18px;
+      align-items:stretch;
+    }
+
+    .heroCard{
+      border-radius: var(--radius2);
+      padding: 22px 22px 20px;
+      background: linear-gradient(180deg, rgba(14,22,48,.65), rgba(11,19,42,.35));
+      border:1px solid rgba(255,255,255,.09);
+      box-shadow: var(--shadow);
+      position:relative;
+      overflow:hidden;
+    }
+    .heroCard::before{
+      content:"";
+      position:absolute;
+      inset:-1px;
+      background:
+        radial-gradient(800px 360px at 20% 0%, rgba(93,91,255,.20), transparent 55%),
+        radial-gradient(700px 340px at 90% 10%, rgba(40,224,174,.16), transparent 60%);
+      pointer-events:none;
+    }
+    .heroCard > *{ position:relative; z-index:2; }
+
+    .kicker{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding:8px 12px;
+      border-radius:999px;
+      background: rgba(255,255,255,.06);
+      border:1px solid rgba(255,255,255,.09);
+      color: var(--muted);
+      font-size:12px;
+      width: fit-content;
+    }
+    .kicker b{
+      color: var(--text);
+      font-weight:700;
+    }
+
+    .title{
+      margin: 14px 0 10px;
+      font-size: clamp(26px, 3.2vw, 40px);
+      line-height:1.05;
+      letter-spacing:-.5px;
+    }
+    .subtitle{
+      margin:0 0 16px;
+      color:var(--muted);
+      font-size: 14px;
+      line-height:1.6;
+      max-width: 62ch;
+    }
+
+    .ctaRow{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      margin-top: 10px;
+    }
+
+    .cta{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      padding:12px 14px;
+      border-radius: 14px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(7,10,18,.35);
+      color: var(--text);
+      font-weight:700;
+      cursor:pointer;
+      transition:.18s ease;
+      user-select:none;
+    }
+    .cta:hover{ transform: translateY(-1px); border-color: rgba(255,255,255,.22); }
+    .cta.primary{
+      background: linear-gradient(135deg, rgba(93,91,255,.90), rgba(40,224,174,.70));
+      border-color: rgba(255,255,255,.18);
+      box-shadow: 0 18px 55px rgba(93,91,255,.25);
+    }
+    .cta.secondary{
+      background: linear-gradient(135deg, rgba(255,209,102,.14), rgba(93,91,255,.12));
+    }
+
+    /* side info */
+    .side{
+      display:grid;
+      gap:14px;
+    }
+    .mini{
+      border-radius: var(--radius);
+      padding: 16px 16px 14px;
+      background: rgba(14,22,48,.45);
+      border:1px solid rgba(255,255,255,.08);
+      box-shadow: 0 14px 45px rgba(0,0,0,.30);
+    }
+    .mini h3{
+      margin:0 0 8px;
+      font-size:14px;
+      letter-spacing:.2px;
+      display:flex;
+      align-items:center;
+      gap:10px;
+    }
+    .mini p{
+      margin:0;
+      color:var(--muted);
+      font-size:13px;
+      line-height:1.6;
+    }
+    .hint{
+      display:flex;
+      gap:10px;
+      align-items:flex-start;
+      margin-top: 10px;
+      padding: 12px;
+      border-radius: 14px;
+      background: rgba(255,255,255,.05);
+      border:1px dashed rgba(255,255,255,.16);
+    }
+    .hint .icon{
+      width:28px;height:28px;border-radius:10px;
+      display:grid;place-items:center;
+      background: rgba(40,224,174,.14);
+      border:1px solid rgba(40,224,174,.28);
+      flex: 0 0 auto;
+    }
+
+    /* index list */
+    .section{
+      margin-top: 18px;
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:14px;
+    }
+
+    .card{
+      border-radius: var(--radius2);
+      padding: 18px;
+      background: linear-gradient(180deg, rgba(14,22,48,.55), rgba(11,19,42,.25));
+      border:1px solid rgba(255,255,255,.08);
+      box-shadow: var(--shadow);
+      position:relative;
+      overflow:hidden;
+    }
+    .card::after{
+      content:"";
+      position:absolute;
+      inset:auto -40px -60px auto;
+      width: 200px;
+      height: 200px;
+      background: radial-gradient(circle at 30% 30%, rgba(93,91,255,.22), transparent 60%);
+      transform: rotate(15deg);
+      pointer-events:none;
+    }
+
+    .cardHead{
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap:14px;
+      margin-bottom: 10px;
+    }
+    .cardHead h2{
+      margin:0;
+      font-size:16px;
+      letter-spacing:.2px;
+    }
+    .meta{
+      display:flex;
+      gap:8px;
+      flex-wrap:wrap;
+      justify-content:flex-end;
+    }
+    .tag{
+      font-size:12px;
+      color: var(--muted);
+      padding: 8px 10px;
+      border-radius: 999px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.04);
+      white-space:nowrap;
+    }
+    .tag strong{ color: var(--text); font-weight:800; }
+
+    .indexGrid{
+      margin-top: 12px;
+      display:grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .item{
+      display:flex;
+      align-items:flex-start;
+      gap: 12px;
+      padding: 14px;
+      border-radius: 16px;
+      border:1px solid rgba(255,255,255,.08);
+      background: rgba(7,10,18,.25);
+      transition: .15s ease;
+      text-decoration:none;
+      color: inherit;
+    }
+    .item:hover{
+      transform: translateY(-1px);
+      border-color: rgba(255,255,255,.18);
+      background: rgba(7,10,18,.35);
+    }
+
+    .num{
+      width: 36px; height: 36px;
+      border-radius: 14px;
+      display:grid;
+      place-items:center;
+      font-weight:900;
+      letter-spacing:.2px;
+      background: linear-gradient(135deg, rgba(93,91,255,.70), rgba(40,224,174,.45));
+      border:1px solid rgba(255,255,255,.12);
+      box-shadow: 0 14px 35px rgba(93,91,255,.20);
+      flex: 0 0 auto;
+    }
+    .txt b{
+      display:block;
+      font-size: 13.5px;
+      margin-bottom: 3px;
+    }
+    .txt span{
+      display:block;
+      color: var(--muted);
+      font-size: 12.5px;
+      line-height: 1.5;
+    }
+
+    /* footer */
+    footer{
+      margin-top: 18px;
+      padding: 18px 0 0;
+      color: var(--muted);
+      font-size: 12px;
+      line-height:1.6;
+    }
+    .footCard{
+      border-radius: var(--radius2);
+      padding: 16px 18px;
+      background: rgba(14,22,48,.35);
+      border:1px solid rgba(255,255,255,.08);
+    }
+
+    /* responsive */
+    @media (max-width: 920px){
+      .hero{ grid-template-columns: 1fr; }
+      .brand{ min-width:unset; }
+      .indexGrid{ grid-template-columns: 1fr; }
+      .tools{ justify-content:flex-start; }
+      .topbar{ border-radius: 20px; }
+    }
+
+    /* print nice */
+    @media print{
+      body{ background:#fff; color:#111; }
+      .topbar, .btn, .ctaRow{ display:none !important; }
+      .heroCard, .mini, .card, .footCard{ box-shadow:none; background:#fff; border:1px solid #ddd; }
+      .tag, .kicker{ border-color:#ddd; }
+      .num{ background:#eee; color:#111; box-shadow:none; }
+      a.item{ text-decoration:none; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <div class="topbar">
+      <div class="brand">
+        <div class="badge" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+            <path d="M12 2l2.2 6.7H21l-5.4 3.9 2.1 6.7L12 15.6 6.3 19.3l2.1-6.7L3 8.7h6.8L12 2z" stroke="white" stroke-width="1.6" />
+          </svg>
+        </div>
+        <div>
+          <h1>Mega da Virada 2025</h1>
+          <small>Índice completo para leitura rápida</small>
+        </div>
+      </div>
+
+      <div class="tools">
+        <div class="pill"><span class="dot"></span> Conteúdo informativo</div>
+        <div class="pill">Atualize os tópicos quando quiser</div>
+        <button class="btn" onclick="window.print()" title="Imprimir / salvar em PDF">
+          <span>🖨️</span> Imprimir / PDF
+        </button>
+      </div>
+    </div>
+
+    <section class="hero" id="topo">
+      <div class="heroCard">
+        <div class="kicker">Guia de navegação • <b>Mega da Virada</b> • 2025</div>
+        <h2 class="title">Tudo sobre a Mega da Virada 2025 — organizado por tópicos</h2>
+        <p class="subtitle">
+          Aqui você tem um índice “pronto pra site” com os principais assuntos que as pessoas procuram:
+          regras, como apostar, bolões, probabilidades, impostos e o que fazer se ganhar.
+          É ideal para blog, landing page ou um PDF bem apresentável.
+        </p>
+
+        <div class="ctaRow">
+          <a class="cta primary" href="#indice">📌 Ver índice agora</a>
+          <a class="cta secondary" href="#perguntas">❓ Perguntas frequentes</a>
+          <a class="cta" href="#seguranca">🛡️ Cuidados e segurança</a>
+        </div>
+      </div>
+
+      <div class="side">
+        <div class="mini">
+          <h3>✨ O que você encontra aqui</h3>
+          <p>
+            Um <b>índice completo</b> com descrição de cada seção (tipo “sumário de livro”), pronto pra você
+            expandir depois com textos longos e SEO.
+          </p>
+          <div class="hint">
+            <div class="icon">⚡</div>
+            <div>
+              <p style="margin:0;color:var(--text);font-weight:800;">Dica rápida</p>
+              <p style="margin:2px 0 0;">
+                Se você quiser, eu também posso gerar a <b>página completa</b> com textos longos em cada seção.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mini" id="seguranca">
+          <h3>🛡️ Aviso de responsabilidade</h3>
+          <p>
+            Apostas envolvem risco. Jogue com responsabilidade e evite golpes. 
+            Sempre use canais oficiais e confira prazos e regras no regulamento do concurso.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="indice">
+      <div class="card">
+        <div class="cardHead">
+          <h2>Índice – Mega da Virada 2025</h2>
+          <div class="meta">
+            <span class="tag"><strong>13</strong> seções</span>
+            <span class="tag">Ideal para blog</span>
+            <span class="tag">Bonito no mobile</span>
+          </div>
+        </div>
+
+        <div class="indexGrid">
+          <a class="item" href="#s1">
+            <div class="num">1</div>
+            <div class="txt">
+              <b>O que é a Mega da Virada</b>
+              <span>Entenda o sorteio especial e o que muda em relação à Mega-Sena tradicional.</span>
+            </div>
+          </a>
+
+          <a class="item" href="#s2">
+            <div class="num">2</div>
+            <div class="txt">
+              <b>Mega da Virada 2025: visão geral</b>
+              <span>O que esperar do concurso, contexto e por que ele chama tanta atenção.</span>
+            </div>
+          </a>
+
+          <a class="item" href="#s3">
+            <div class="num">3</div>
+            <div class="txt">
+              <b>Como funciona</b>
+              <span>Regras básicas do jogo, quantidade de números e lógica da premiação.</span>
+            </div>
+          </a>
+
+          <a class="item" href="#s4">
+            <div class="num">4</div>
+            <div class="txt">
+              <b>Distribuição do prêmio</b>
+              <span>Faixas de acerto, divisão e o que acontece se ninguém acertar a Sena.</span>
+            </div>
+          </a>
+
+          <a class="item" href="#s5">
+            <div class="num">5</div>
+            <div class="txt">
+              <b>Como apostar</b>
+              <span>Passo a passo: lotérica, canais digitais e atenção ao prazo final.</span>
+            </div>
+          </a>
+
+          <a class="item" href="#s6">
+            <div class="num">6</div>
+            <div class="txt">
+              <b>Bolões</b>
+              <span>Como funcionam, vantagens, cuidados e como evitar confusão na divisão.</span>
+            </div>
+          </a>
+
+          <a class="item" href="#s7">
+            <div class="num">7</div>
+            <div class="txt">
+              <b>Probabilidades</b>
+              <span>Chances na aposta simples e em apostas com mais números (explicado de forma clara).</span>
+            </div>
+          </a>
+
+          <a class="item" href="#s8">
+            <div class="num">8</div>
+            <div class="txt">
+              <b>Histórico e curiosidades</b>
+              <span>Recordes, curiosidades e fatos que as pessoas gostam de ver antes do sorteio.</span>
+            </div>
+          </a>
+
+          <a class="item" href="#s9">
+            <div class="num">9</div>
+            <div class="txt">
+              <b>O que fazer se ganhar</b>
+              <span>Primeiros passos, como resgatar com segurança e como evitar exposição.</span>
+            </div>
+          </a>
+
+          <a class="item" href="#s10">
+            <div class="num">10</div>
+            <div class="txt">
+              <b>Impostos e tributação</b>
+              <span>O que é descontado, o que vai pro bolso e como pensar no valor líquido.</span>
+            </div>
+          </a>
+
+          <a class="item" href="#s11">
+            <div class="num">11</div>
+            <div class="txt">
+              <b>Dicas para apostadores</b>
+              <span>Como apostar com consciência, evitar golpes e manter o jogo sob controle.</span>
+            </div>
+          </a>
+
+          <a class="item" href="#perguntas">
+            <div class="num">12</div>
+            <div class="txt">
+              <b>Perguntas frequentes</b>
+              <span>Dúvidas comuns: CPF, resgate, bolões, prazos e regras gerais.</span>
+            </div>
+          </a>
+
+          <a class="item" href="#s13">
+            <div class="num">13</div>
+            <div class="txt">
+              <b>Conclusão</b>
+              <span>Resumo final e reforço de boas práticas para apostar com responsabilidade.</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Detailed anchors (optional mini descriptions) -->
+      <div class="card" id="s1">
+        <div class="cardHead">
+          <h2>1) O que é a Mega da Virada</h2>
+          <div class="meta"><span class="tag">Conceito</span><span class="tag">Diferenças</span></div>
+        </div>
+        <p class="subtitle">Explique de forma simples o que é o sorteio especial de fim de ano, por que ele existe e quais pontos costumam ser diferentes em relação aos concursos regulares.</p>
+      </div>
+
+      <div class="card" id="s2">
+        <div class="cardHead">
+          <h2>2) Mega da Virada 2025: visão geral</h2>
+          <div class="meta"><span class="tag">Contexto</span><span class="tag">Expectativa</span></div>
+        </div>
+        <p class="subtitle">Uma visão rápida do concurso: quando acontece, por que o prêmio é tão grande e quais são os assuntos que mais geram dúvidas e pesquisas.</p>
+      </div>
+
+      <div class="card" id="s3">
+        <div class="cardHead">
+          <h2>3) Como funciona</h2>
+          <div class="meta"><span class="tag">Regras</span><span class="tag">Apostas</span></div>
+        </div>
+        <p class="subtitle">Detalhe as regras básicas: quantos números escolher, como validar uma aposta e como se organiza a premiação por faixas.</p>
+      </div>
+
+      <div class="card" id="s4">
+        <div class="cardHead">
+          <h2>4) Distribuição do prêmio</h2>
+          <div class="meta"><span class="tag">Faixas</span><span class="tag">Acúmulo</span></div>
+        </div>
+        <p class="subtitle">Explique como o prêmio é dividido por faixa e o que acontece quando ninguém acerta a maior faixa (regra importante em sorteios especiais).</p>
+      </div>
+
+      <div class="card" id="s5">
+        <div class="cardHead">
+          <h2>5) Como apostar</h2>
+          <div class="meta"><span class="tag">Online</span><span class="tag">Lotérica</span></div>
+        </div>
+        <p class="subtitle">Mostre as formas de apostar: presencial e digital, com atenção ao horário limite no dia do sorteio.</p>
+      </div>
+
+      <div class="card" id="s6">
+        <div class="cardHead">
+          <h2>6) Bolões</h2>
+          <div class="meta"><span class="tag">Divisão</span><span class="tag">Cuidados</span></div>
+        </div>
+        <p class="subtitle">Explique bolão de lotérica e bolão entre amigos, como registrar cotas e como evitar confusões na hora da divisão do prêmio.</p>
+      </div>
+
+      <div class="card" id="s7">
+        <div class="cardHead">
+          <h2>7) Probabilidades e chances de ganhar</h2>
+          <div class="meta"><span class="tag">Estatística</span><span class="tag">Clareza</span></div>
+        </div>
+        <p class="subtitle">Apresente as chances de forma entendível, mostrando como apostar mais números aumenta probabilidade (e também o custo).</p>
+      </div>
+
+      <div class="card" id="s8">
+        <div class="cardHead">
+          <h2>8) Histórico e curiosidades</h2>
+          <div class="meta"><span class="tag">Recordes</span><span class="tag">Curiosidades</span></div>
+        </div>
+        <p class="subtitle">Traga fatos interessantes: recordes, curiosidades e comportamentos comuns dos apostadores no fim do ano.</p>
+      </div>
+
+      <div class="card" id="s9">
+        <div class="cardHead">
+          <h2>9) O que fazer se ganhar</h2>
+          <div class="meta"><span class="tag">Resgate</span><span class="tag">Segurança</span></div>
+        </div>
+        <p class="subtitle">Primeiros passos: guardar comprovante, conferir resultado, procurar canais oficiais e manter discrição.</p>
+      </div>
+
+      <div class="card" id="s10">
+        <div class="cardHead">
+          <h2>10) Impostos e tributação</h2>
+          <div class="meta"><span class="tag">Desconto</span><span class="tag">Valor líquido</span></div>
+        </div>
+        <p class="subtitle">Explique de forma direta o que costuma ser descontado e por que o valor divulgado pode não ser exatamente o que cai na conta.</p>
+      </div>
+
+      <div class="card" id="s11">
+        <div class="cardHead">
+          <h2>11) Dicas importantes para apostadores</h2>
+          <div class="meta"><span class="tag">Boas práticas</span><span class="tag">Golpes</span></div>
+        </div>
+        <p class="subtitle">Dicas práticas: definir limite de gasto, evitar sites falsos, não compartilhar comprovante e manter tudo registrado em bolões.</p>
+      </div>
+
+      <div class="card" id="perguntas">
+        <div class="cardHead">
+          <h2>12) Perguntas frequentes</h2>
+          <div class="meta"><span class="tag">FAQ</span><span class="tag">Dúvidas</span></div>
+        </div>
+        <div class="subtitle" style="margin:0;">
+          <ul style="margin: 0; padding-left: 18px; color: var(--muted); line-height:1.7;">
+            <li>Posso apostar online? Quais cuidados devo ter?</li>
+            <li>Até que horas dá para apostar no dia do sorteio?</li>
+            <li>Se ninguém acertar a Sena, o prêmio acumula ou vai para outra faixa?</li>
+            <li>Bolão: como funciona a divisão e o comprovante das cotas?</li>
+            <li>Como resgatar valores altos com segurança?</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card" id="s13">
+        <div class="cardHead">
+          <h2>13) Conclusão</h2>
+          <div class="meta"><span class="tag">Resumo</span><span class="tag">Jogo responsável</span></div>
+        </div>
+        <p class="subtitle">Feche reforçando: apostar com responsabilidade, conferir as regras oficiais e usar o índice como guia para se informar antes do concurso.</p>
+      </div>
+
+      <div class="footCard">
+        <footer>
+          <b>Observação:</b> este modelo é um layout pronto para você colar como <code>index.html</code>.  
+          Se você quiser, eu adapto com: botão “Voltar ao topo”, seção “última atualização”, e um bloco SEO com palavras-chave.
+        </footer>
+      </div>
+
+    </section>
+
+  </div>
+</body>
+</html>
